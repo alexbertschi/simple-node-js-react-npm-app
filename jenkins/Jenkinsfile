@@ -23,7 +23,6 @@ pipeline {
             steps {
                 bat 'npm run build'
                 input message: 'Finished using the web site? (Click "Proceed" to continue)'
-                bat 'kill $(cat .pidfile)'
             }
         }
     }
