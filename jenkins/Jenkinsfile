@@ -22,8 +22,6 @@ pipeline {
         stage('Deliver') {
             steps {
                 bat 'npm run build'
-                bat 'npm start &'
-                bat 'sleep 1'
                 input message: 'Finished using the web site? (Click "Proceed" to continue)'
                 bat 'kill $(cat .pidfile)'
             }
