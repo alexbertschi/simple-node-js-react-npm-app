@@ -11,7 +11,7 @@ class App extends Component {
           <h1 className="App-title">Welcome to React</h1>
         </header>
         <p className="App-intro">
-          This is the first trial to trigger the pipeline by a push command.
+          See how it runs in the background
         </p>
       </div>
     );
