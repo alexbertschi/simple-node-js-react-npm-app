@@ -1,6 +1,6 @@
 node {
   stage('SCM') {
-    git 'https://github.com/alexbertschi/simple-node-js-react-npm-app.git'
+    git url:'https://github.com/alexbertschi/simple-node-js-react-npm-app.git', branch:'main'
   }
   stage('SonarQube analysis') {
     def scannerHome = tool 'SonarScanner';
